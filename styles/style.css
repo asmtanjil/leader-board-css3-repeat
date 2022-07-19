@@ -97,7 +97,7 @@ grid-column-gap: 25px;
   padding: 10px;
 }
 .course-banner{
-  
+
 }
 .course-banner img{
   width: 224px;
@@ -126,4 +126,16 @@ grid-column-gap: 25px;
 }
 .fa-star.empty{
   color: #AEAEAE;
+}
+/* Media Query */
+@media screen and (max-width:676px) {
+  .container{
+    width: 100%;
+  }
+  .players, .blogs, .courses{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .one-player, .blog{
+    flex-direction: column;
+  }
 }
